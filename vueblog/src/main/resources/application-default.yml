@@ -1,0 +1,25 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 
+  redis:
+    host: localhost
+    jedis:
+      pool:
+        max-active: 20
+    password: 
+    timeout: 5000
+#  mail:
+#    host: smtp.163.com
+#    username: skymomail@163.com
+#    password: your
+#    default-encoding: UTF-8
+#shiro-redis:
+#  enabled: true
+#  redis-manager:
+#    host: localhost:6379
+##    timeout: 5000
+#    password: 
